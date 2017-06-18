@@ -407,3 +407,51 @@ $font3: georgia
       color: rgb(243, 178, 157)
     &__follow
       width: 10px
+
+@media screen and (max-width: 1100px)
+  .content
+    &__icon, &__icon2, &__icon3, &__icon4
+      display: none
+
+@media screen and (max-width: 960px)
+  .header
+    width: 98%
+  .title
+    grid-template-columns: 1fr 100% 1fr
+    &__left
+      margin: 0
+    &__center
+      width: 100%
+  .content
+    margin-top: 24px
+    grid-template-columns: 1fr 75% 25% 1fr
+    &__navigation
+      &__main-title
+        width: 60%
+      &__img
+        width: 100%
+        &--next
+          top: 18%
+          left: 92%
+        &--previous
+          top: 18%
+          left: 2%
+      &__main-text
+        width: 74%
+      &__line
+        width: 100%
+        height: 14px
+    &__sidebar
+      &__img
+        grid-template-columns: 50px 50px
+      &__category1
+        & > img
+          float: none
+      &__category2
+        & > img
+          float: none
+      &__category3
+        & > img
+          float: none
+  .footer
+    grid-template-columns: 1fr 100% 1fr
